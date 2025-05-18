@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-black text-white px-1 lg:px-16">
+    <main className="min-h-screen flex flex-col bg-black text-white ">
       {/* Image Section - Top 25% */}
       <div className="relative w-full h-[60vh] flex items-center justify-center ">
         <Image
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
 
       {/* Text Section - Bottom 75% */}
-      <div className="w-full flex-1">
+      <div className="w-full flex-1 px-1 lg:px-16">
         <div className="h-full flex flex-col">
           {/* Title */}
           <div className="flex justify-center items-center  py-20 mb-2">
