@@ -8,6 +8,7 @@ import {ProjectGallery} from "@/components/project-gallery"
 import { ProgressIndicator } from "@/components/progress-indicator"
 import { ServiceTags } from "@/components/service-tags"
 import  {Qvideo} from "@/components/quickVideo"
+import { SectionNavigator } from "@/components/section-navigator"
 
 export default function ProjectPage() {
   return (
