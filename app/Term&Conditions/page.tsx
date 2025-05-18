@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-black text-white px-16">
+    <main className="min-h-screen flex flex-col bg-black text-white px-1 lg:px-16">
       {/* Image Section - Top 25% */}
       <div className="relative w-full h-[60vh] flex items-center justify-center ">
         <Image
