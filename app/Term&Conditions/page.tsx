@@ -50,7 +50,7 @@ export default function Home() {
       <div className="w-full flex-1 px-1 lg:px-16">
         <div className="h-full flex flex-col">
           {/* Title */}
-          <div className="flex justify-center items-center  py-20 mb-2 w-full">
+          <div className="flex justify-center items-center  py-20 px-2 mb-2 w-full">
             <h1 className="lg:text-4xl tracking-wider text-2xl  text-white">Terms and Conditions</h1>
           </div>
 
