@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react"
 
-export function ProgressIndicator() {
+export function ProgressIndicator({sectionNames}: { sectionNames: string[] }) {
   const [scrollProgress, setScrollProgress] = useState(0)
-  const [currentSection, setCurrentSection] = useState("Cover")
+  const [currentSection, setCurrentSection] = useState(sectionNames[0])
 
   useEffect(() => {
     // Throttle function to limit execution frequency
@@ -33,7 +33,7 @@ export function ProgressIndicator() {
         const sectionBottom = sectionTop + section.offsetHeight
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-          const sectionNames = ["Cover", "Challenge", "Strategy", "Gallery", "Outcome"]
+          
           setCurrentSection(sectionNames[index])
         }
       })

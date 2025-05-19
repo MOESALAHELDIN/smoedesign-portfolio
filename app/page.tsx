@@ -11,9 +11,10 @@ import  {Qvideo} from "@/components/quickVideo"
 import { SectionNavigator } from "@/components/section-navigator"
 
 export default function ProjectPage() {
+  const sectionNames = ["Cover", "Challenge", "Strategy", "Gallery", "Outcome"]
   return (
     <main className="relative">
-      <ProgressIndicator />
+      <ProgressIndicator  sectionNames={sectionNames}/>
 
       {/* Section 1: Full-Screen Cover Image */}
       <section className="relative h-screen w-full overflow-hidden bg-black">
