@@ -20,7 +20,7 @@ export default async function ArticlePage({ params }: { params: { slug: string }
   const relatedArticles = getRelatedArticles(slug)
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="flex justify-between items-center p-6 bg-white">
         <Link href="/" className="w-12 h-12">
@@ -48,7 +48,7 @@ export default async function ArticlePage({ params }: { params: { slug: string }
         </div>
 
         {/* Hero Image */}
-        <div className="relative">
+        <div className="relative px-6">
           <Image
             src={article.content.imageUrl || "/placeholder.svg"}
             alt={article.title}

@@ -39,16 +39,17 @@ export default function ArticleGallery() {
                     </span>
                   ))}
                 </div>
-
-                <h3 className="text-2xl font-normal mb-4 hover:text-gray-600 transition-colors cursor-pointer">
+ <Link
+                  href={`/articles/${article.slug}`}>
+                <h3 className="text-2xl lg:text-3xl lg:font-semibold font-normal mb-4 hover:text-gray-600 hover:underline transition-colors cursor-pointer">
                   {article.title}
                 </h3>
-
+</Link>
                 <p className="text-sm text-gray-600 mb-4 max-w-md mx-auto">{article.description}</p>
 
                 <Link
                   href={`/articles/${article.slug}`}
-                  className="text-xs tracking-wider hover:text-gray-600 transition-colors inline-block"
+                  className="text-xs tracking-wider hover:text-gray-600 transition-colors inline-block hover:underline"
                 >
                   READ ARTICLE
                 </Link>
