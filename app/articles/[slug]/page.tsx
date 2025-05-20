@@ -1,17 +1,22 @@
+
 import Image from "next/image"
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { getArticleBySlug, getRelatedArticles } from "@/lib/articles"
 import { notFound } from "next/navigation"
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = getArticleBySlug(params.slug)
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
+
+    const { slug } = await params
+
+  
+  const article =getArticleBySlug(slug)
 
   if (!article || !article.content) {
     notFound()
   }
 
-  const relatedArticles = getRelatedArticles(params.slug)
+  const relatedArticles = getRelatedArticles(slug)
 
   return (
     <div className="min-h-screen bg-gray-100">
