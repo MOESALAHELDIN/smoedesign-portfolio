@@ -56,12 +56,14 @@ export default async function ArticlePage({ params }: { params: { slug: string }
             height={600}
             className="w-full h-64 md:h-96 object-cover"
           />
-          <div className="absolute bottom-2 right-2 text-xs text-gray-400">{article.content.imageTitle}</div>
         </div>
 
         {/* Article Content */}
-        <div className="px-6 py-8 max-w-3xl mx-auto">
+        <div className="px-6 py-8 max-w-3xl mx-auto ">
+          <div className="flex justify-between items-center w-full bg-red-200">
           <h2 className="text-2xl font-bold mb-6">{article.content.subtitle}</h2>
+          <div className="text-xs text-gray-400">{article.content.imageTitle}</div>
+          </div>
 
           {article.content.paragraphs.map((paragraph, index) => (
             <p key={index} className="mb-4">
