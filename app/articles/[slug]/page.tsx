@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { getArticleBySlug, getRelatedArticles } from "@/lib/articles"
 import { notFound } from "next/navigation"
+import { TiSocialFacebook,TiSocialLinkedin,TiSocialTwitter   } from "react-icons/ti";
 
 export default async function ArticlePage({ params }: { params: { slug: string } }) {
 
@@ -78,9 +79,9 @@ export default async function ArticlePage({ params }: { params: { slug: string }
             <div className="flex items-center gap-2">
               <span className="text-gray-600">SHARE</span>
               <div className="flex">
-                <button className="border px-2 py-1 text-xs">SOCIAL</button>
-                <button className="border px-2 py-1 text-xs">SOCIAL</button>
-                <button className="border px-2 py-1 text-xs">SOCIAL</button>
+                <button className="border px-2 py-1 text-xs"><TiSocialFacebook size={25} /></button>
+                <button className="border px-2 py-1 text-xs"><TiSocialLinkedin size={25}/></button>
+                <button className="border px-2 py-1 text-xs"><TiSocialTwitter size={25}/></button>
                 <button className="border px-2 py-1 text-xs">COPY</button>
               </div>
             </div>
